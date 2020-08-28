@@ -17,10 +17,10 @@ from parameterized import (
 from nose.tools import (
     eq_, istest, nottest, ok_
 )
-from pydvdid.exceptions import (
+from rlapydvdid.exceptions import (
     FileContentReadException, FileTimeOutOfRangeException, PathDoesNotExistException
 )
-from pydvdid.functions import (
+from rlapydvdid.functions import (
     compute, _check_dvd_path_exists, _check_video_ts_path_exists, _get_file_creation_time,
     _get_file_name, _get_file_size, _get_first_64k_content, _get_video_ts_file_paths,
     _get_vmgi_file_content, _get_vts01i_file_content

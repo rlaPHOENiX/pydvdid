@@ -14,11 +14,11 @@ from parameterized import (
 from nose.tools import (
     eq_, istest, ok_
 )
-from pydvdid.exceptions import (
+from rlapydvdid.exceptions import (
     FileContentReadException, FileTimeOutOfRangeException, PathDoesNotExistException,
     PydvdidException
 )
-import pydvdid
+import rlapydvdid
 
 
 @istest
@@ -98,7 +98,7 @@ def all_package_defined_exceptions_derive_from_pydvdidexception(): # pylint: dis
         message = "{0} is not subclassed from PydvdidException.".format(exception_type.__name__)
         ok_(not issubclass(type, PydvdidException), message)
 
-    for member_tuple in getmembers(pydvdid):
+    for member_tuple in getmembers(rlapydvdid):
         member = member_tuple[1]
 
         if isclass(member) and issubclass(member, Exception) and member != PydvdidException:

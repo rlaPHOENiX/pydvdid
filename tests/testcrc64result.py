@@ -13,7 +13,7 @@ from nose.tools import (
 from parameterized import (
     parameterized, param
 )
-from pydvdid.crc64result import Crc64Result
+from rlapydvdid.crc64result import Crc64Result
 
 
 @istest

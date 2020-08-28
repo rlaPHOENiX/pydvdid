@@ -7,8 +7,8 @@ from mock import patch
 from nose.tools import (
     eq_, istest
 )
-from pydvdid.crc64calculator import _Crc64Calculator
-from pydvdid.crc64result import Crc64Result
+from rlapydvdid.crc64calculator import _Crc64Calculator
+from rlapydvdid.crc64result import Crc64Result
 
 
 @istest

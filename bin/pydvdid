@@ -2,7 +2,7 @@
 
 
 from sys import argv, exit
-from pydvdid import compute
+from rlapydvdid import compute
 
 
 if __name__ == "__main__":
